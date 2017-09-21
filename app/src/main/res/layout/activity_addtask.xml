@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tambahkan Tugas"
+        android:id="@+id/activity_addtask_edittext_tambahtugas"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:inputType="textCapSentences"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_addtask_edittext_tambahtugas"
+        android:id="@+id/activity_addtask_relativelayout_tanggal"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Tanggal:"
+            android:id="@+id/activity_addtask_edittext_settanggal"
+            android:textColor="@android:color/holo_purple"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_addtask_edittext_gettanggal"
+            android:layout_toRightOf="@id/activity_addtask_edittext_settanggal"
+            />
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_addtask_button_tambahtugas"
+        android:layout_below="@+id/activity_addtask_relativelayout_tanggal"
+        android:text="Tambah Tugas"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
